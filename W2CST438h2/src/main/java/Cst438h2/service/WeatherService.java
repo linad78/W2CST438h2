@@ -37,6 +37,13 @@ public class WeatherService {
 		return new TempAndTime(temp, time, timezone);
 	}
 
+	/**
+	 * George's Comments
+	 * 
+	 * The methods below are not being used and can be removed.
+	 * 
+	 */
+	
 	public CityService getWeather(String cityName) {
 		// TODO Auto-generated method stub
 		return null;
