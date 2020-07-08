@@ -22,7 +22,7 @@ public class CityController {
 	public ResponseEntity<Cst438h2.domain.City> getWeather(@PathVariable("city") String cityName, Model model, CityInfo Null) {
 
 		// TODO Your code goes here
-		// TODO delete the following line
+		
 
 		
 			City city = cityService.getCityInfo(cityName);
