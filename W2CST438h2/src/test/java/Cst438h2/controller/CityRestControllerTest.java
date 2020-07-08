@@ -8,7 +8,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest;  
 import org.springframework.boot.test.json.JacksonTester;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpStatus;
@@ -79,4 +79,14 @@ public class CityRestControllerTest {
 				
 			}
 
-		}
+}
+
+/**George's Comments
+ * 
+ * I was unable to test this JUnit. I am getting an error "IllegalStateException"
+ * Spring says "Consider defining a bean of type 'Cst438h2.service.WeatherService' 
+ * in your configuration."
+
+ * Otherwise this code looks OK. 
+ *
+ * */
