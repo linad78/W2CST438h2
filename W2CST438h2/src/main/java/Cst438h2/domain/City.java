@@ -19,11 +19,13 @@ public class City {
 	private int population;
 	
 	
-	public City(int i, String string, String string2, String string3, Object object, int j, int k, Country country) {
+	public City(int i, String string, String string2, String string3, 
+			Object object, int j, int k, Country country) {
 		this(0, "name", "code", "district", 0);
 	}
-	
-	public City(long id, String name, String countryCode, String string, int i) {
+
+	//GEORGE: consider renaming the district variable "district" instead of "string", and population instead of "i"
+	public City(long id, String name, String countryCode, String string, int i) { 
 		super();
 		this.id = id;
 		this.name = name;
@@ -63,9 +65,6 @@ public class City {
 	public void setPopulation(int population) {
 		this.population = population;
 	}
-	
-	
-
 
 	@Override
 	public String toString() {
@@ -78,7 +77,14 @@ public class City {
 		// TODO Auto-generated method stub
 		
 	}
-	
-	
-
 }
+
+/**
+ * George's Comments
+ * 
+ * I'm not sure what the setWeather function is supposed to do, but there is no code, so 
+ * right now it does nothing.
+ * 
+ * Please see in-line comments
+ * 
+ */
