@@ -21,16 +21,27 @@ public class CityService {
 	@Autowired
 	private WeatherService weatherService;
 	@Autowired
-	private CityService cityService;
+	private CityService cityService; //GEORGE: This is unused and can be removed
 
 	public City getCityInfo(String cityName) {
 		List<City> cityList = cityRepository.findByName(cityName);
+		
 		if (cityList.size() == 0)
 
 			return null;
 		else
 			return cityList.get(0);
-
+		/**
+		 * George's Comments
+		 * 
+		 * Instead of returning get the city instance, use the results of city to
+		 * build a new CityInfo object. Here is an example:
+		 * 
+		 * return new CityInfo(city.get(0),country.getName(), timeAndTemp.getFahrenheit(), timeAndTemp.getLocalTime());
+		 * 
+		 * Also, none of the methods below are needed, and can be removed.
+		 */
+		
 	}
 
 	public CityRepository getCityRepository() {
