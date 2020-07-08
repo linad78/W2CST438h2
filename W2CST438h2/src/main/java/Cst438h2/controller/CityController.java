@@ -23,8 +23,6 @@ public class CityController {
 
 		// TODO Your code goes here
 		
-
-		
 			City city = cityService.getCityInfo(cityName);
 			if ( city == null) {
 				
